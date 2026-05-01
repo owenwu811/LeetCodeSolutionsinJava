@@ -29,3 +29,15 @@ class Solution {
         return 0;
     }
 }
+
+
+// my own solution using java - another way (5/1/26):
+
+
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        Arrays.sort(nums);
+        int diff = nums.length - k;
+        return nums[diff];
+}
+}
